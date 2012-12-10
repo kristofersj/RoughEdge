@@ -1,4 +1,3 @@
 RoughEdge
 =========
-
-the south swedish surf app
+South swedish surf compass
