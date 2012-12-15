@@ -2,9 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
     <head>
-                <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>The Rough Edge</title>
         <meta name="description" content="">
@@ -16,13 +17,14 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
         
-        <script> $(document.ready(function () {
-	        $("#box").scroll(function(){
-	        	s = $("#box").scrollTop();
-	        	$("#box img").css("-webkit-transform","translateY(" + (s/3) + "px)");
-		        
-	        })
-        })
+        <script> 
+        //$(function(){
+            $(".box").scroll(function(){
+                s = $(".box").scrollTop();
+                console.log("jeje");
+                $(".box .stretch").css("-webkit-transform","translateY(" + (s/3) + "px)");
+            });
+        //});
         </script>
     
     </head>
@@ -33,66 +35,45 @@
 
         <!-- Add your site or application content here -->
         
-        
-         <section id= "box>">
+         <section class="box">
         		
-        		
-        		        
-        			
-        				<img src="img/background2.png" alt="background2" width="1250" height="560" class="stretch" alt=""/>
-        	
+        				<img class="stretch" src="img/background2.png" alt="background2" width="1250" height="560" alt=""/>
         				
-        				<div>
+        				<div class="text">
         				
         					<h1> 13m/s </h1>
         					
         					<p>Bacon ipsum dolor sit amet bresaola jerky short ribs spare ribs. Fatback tongue pork, jerky sirloin tail doner capicola shoulder venison chuck bresaola filet mignon chicken meatball. Bresaola salami tail andouille. Jowl tongue hamburger turkey meatloaf swine pork loin bacon pork short ribs venison.
 
-Salami tenderloin pork belly pig pancetta jerky swine kielbasa sirloin spare ribs turkey boudin hamburger bresaola meatball. Drumstick bresaola tri-tip pork chop, tail ground round t-bone filet mignon. T-bone flank pork chop prosciutto ground round. Beef brisket ball tip ground round tail boudin hamburger frankfurter meatloaf andouille flank shankle pork loin pork turducken.
+                            Salami tenderloin pork belly pig pancetta jerky swine kielbasa sirloin spare ribs turkey boudin hamburger bresaola meatball. Drumstick bresaola tri-tip pork chop, tail ground round t-bone filet mignon. T-bone flank pork chop prosciutto ground round. Beef brisket ball tip ground round tail boudin hamburger frankfurter meatloaf andouille flank shankle pork loin pork turducken.
 
-Tenderloin ribeye salami, turducken tongue beef ribs shoulder pork loin tri-tip. Bresaola tail flank ham corned beef andouille drumstick prosciutto, biltong chuck. Bresaola ground round shoulder short loin ribeye biltong cow chicken beef ribs strip steak pork belly beef. Pastrami doner swine venison prosciutto.
+                            Tenderloin ribeye salami, turducken tongue beef ribs shoulder pork loin tri-tip. Bresaola tail flank ham corned beef andouille drumstick prosciutto, biltong chuck. Bresaola ground round shoulder short loin ribeye biltong cow chicken beef ribs strip steak pork belly beef. Pastrami doner swine venison prosciutto.
 
-Swine jerky pork belly cow fatback, frankfurter ham beef ribs kielbasa hamburger shankle pork loin. Shank sausage drumstick, bacon brisket beef ribs frankfurter tail sirloin salami tri-tip prosciutto pork jowl pastrami. Pastrami frankfurter brisket, ground round shankle t-bone chuck turkey prosciutto tenderloin swine. Corned beef boudin strip steak, fatback tri-tip jowl sirloin biltong shank pig ham hock. Flank pork andouille, shoulder turkey strip steak spare ribs tongue short ribs biltong ball tip capicola pig pastrami.
+                            Swine jerky pork belly cow fatback, frankfurter ham beef ribs kielbasa hamburger shankle pork loin. Shank sausage drumstick, bacon brisket beef ribs frankfurter tail sirloin salami tri-tip prosciutto pork jowl pastrami. Pastrami frankfurter brisket, ground round shankle t-bone chuck turkey prosciutto tenderloin swine. Corned beef boudin strip steak, fatback tri-tip jowl sirloin biltong shank pig ham hock. Flank pork andouille, shoulder turkey strip steak spare ribs tongue short ribs biltong ball tip capicola pig pastrami.
 
-Jerky salami beef, tri-tip pancetta andouille bacon pig swine doner pork chop ground round rump leberkas. Filet mignon salami sirloin, beef ribs doner kielbasa jowl boudin brisket. Ribeye turducken strip steak flank. Ground round pastrami spare ribs pork bacon pig pork belly strip steak andouille. Pancetta tri-tip bacon, shoulder andouille meatball t-bone capicola sirloin ball tip meatloaf jerky.
+                            Jerky salami beef, tri-tip pancetta andouille bacon pig swine doner pork chop ground round rump leberkas. Filet mignon salami sirloin, beef ribs doner kielbasa jowl boudin brisket. Ribeye turducken strip steak flank. Ground round pastrami spare ribs pork bacon pig pork belly strip steak andouille. Pancetta tri-tip bacon, shoulder andouille meatball t-bone capicola sirloin ball tip meatloaf jerky.
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
-<p>Bacon ipsum dolor sit amet bresaola jerky short ribs spare ribs. Fatback tongue pork, jerky sirloin tail doner capicola shoulder venison chuck bresaola filet mignon chicken meatball. Bresaola salami tail andouille. Jowl tongue hamburger turkey meatloaf swine pork loin bacon pork short ribs venison.
+                            Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+                            <p>Bacon ipsum dolor sit amet bresaola jerky short ribs spare ribs. Fatback tongue pork, jerky sirloin tail doner capicola shoulder venison chuck bresaola filet mignon chicken meatball. Bresaola salami tail andouille. Jowl tongue hamburger turkey meatloaf swine pork loin bacon pork short ribs venison.
 
-Salami tenderloin pork belly pig pancetta jerky swine kielbasa sirloin spare ribs turkey boudin hamburger bresaola meatball. Drumstick bresaola tri-tip pork chop, tail ground round t-bone filet mignon. T-bone flank pork chop prosciutto ground round. Beef brisket ball tip ground round tail boudin hamburger frankfurter meatloaf andouille flank shankle pork loin pork turducken.
+                            Salami tenderloin pork belly pig pancetta jerky swine kielbasa sirloin spare ribs turkey boudin hamburger bresaola meatball. Drumstick bresaola tri-tip pork chop, tail ground round t-bone filet mignon. T-bone flank pork chop prosciutto ground round. Beef brisket ball tip ground round tail boudin hamburger frankfurter meatloaf andouille flank shankle pork loin pork turducken.
 
-Tenderloin ribeye salami, turducken tongue beef ribs shoulder pork loin tri-tip. Bresaola tail flank ham corned beef andouille drumstick prosciutto, biltong chuck. Bresaola ground round shoulder short loin ribeye biltong cow chicken beef ribs strip steak pork belly beef. Pastrami doner swine venison prosciutto.
+                            Tenderloin ribeye salami, turducken tongue beef ribs shoulder pork loin tri-tip. Bresaola tail flank ham corned beef andouille drumstick prosciutto, biltong chuck. Bresaola ground round shoulder short loin ribeye biltong cow chicken beef ribs strip steak pork belly beef. Pastrami doner swine venison prosciutto.
 
-Swine jerky pork belly cow fatback, frankfurter ham beef ribs kielbasa hamburger shankle pork loin. Shank sausage drumstick, bacon brisket beef ribs frankfurter tail sirloin salami tri-tip prosciutto pork jowl pastrami. Pastrami frankfurter brisket, ground round shankle t-bone chuck turkey prosciutto tenderloin swine. Corned beef boudin strip steak, fatback tri-tip jowl sirloin biltong shank pig ham hock. Flank pork andouille, shoulder turkey strip steak spare ribs tongue short ribs biltong ball tip capicola pig pastrami.
+                            Swine jerky pork belly cow fatback, frankfurter ham beef ribs kielbasa hamburger shankle pork loin. Shank sausage drumstick, bacon brisket beef ribs frankfurter tail sirloin salami tri-tip prosciutto pork jowl pastrami. Pastrami frankfurter brisket, ground round shankle t-bone chuck turkey prosciutto tenderloin swine. Corned beef boudin strip steak, fatback tri-tip jowl sirloin biltong shank pig ham hock. Flank pork andouille, shoulder turkey strip steak spare ribs tongue short ribs biltong ball tip capicola pig pastrami.
 
-Jerky salami beef, tri-tip pancetta andouille bacon pig swine doner pork chop ground round rump leberkas. Filet mignon salami sirloin, beef ribs doner kielbasa jowl boudin brisket. Ribeye turducken strip steak flank. Ground round pastrami spare ribs pork bacon pig pork belly strip steak andouille. Pancetta tri-tip bacon, shoulder andouille meatball t-bone capicola sirloin ball tip meatloaf jerky.
+                            Jerky salami beef, tri-tip pancetta andouille bacon pig swine doner pork chop ground round rump leberkas. Filet mignon salami sirloin, beef ribs doner kielbasa jowl boudin brisket. Ribeye turducken strip steak flank. Ground round pastrami spare ribs pork bacon pig pork belly strip steak andouille. Pancetta tri-tip bacon, shoulder andouille meatball t-bone capicola sirloin ball tip meatloaf jerky.
 
-Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+                            Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
         					
-        				</div>	
-        				
-        				
-        				        				 </section> 
-        			        			
+        				    </div>	
+         </section> 
         
-                
-        
-      
-        
-        
-        
-        
-                
-        
-        
-        
-        
-        
-        <script>$(document).ready(function() {
-	        $("box"). scrollTop();
-	        
-        })
-        
+        <script>
+            $(function(){
+                $(".box").scrollTop();
+            });
+        </script>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
